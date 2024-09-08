@@ -1,4 +1,4 @@
-# All lines starting with # are all commments and not codes that can be executed.
+# All lines starting with # are all comments and not codes that can be executed.
 
 # Q1. For this assignment, I chose the organism Hucho hucho commonly known as the huchen
 # or Danube salmon. is a large species of freshwater fish in the salmon family, 
@@ -6,7 +6,7 @@
 # The huchen is known for its size, with some individuals growing over 1.5 meters 
 # (about 5 feet) in length and weighing up to 50 kg (110 lbs)
 
-# To download the GFF file of the organism, I went to the website with the Esemble FTP server url,
+# To download the GFF file of the organism, I went to the website with the Ensemble FTP server URL,
 #http://ftp.ensembl.org/pub/current_gff3/Links and copied the link from the organism
 
 # Command Used to download the GFF3 file
@@ -17,7 +17,7 @@ gunzip Hucho_hucho.ASM331708v1.112.gff3.gz
 
 # Q2. Obtain features of the file
 cat Hucho_hucho.ASM331708v1.112.gff3 | wc 
-# Asnwer: 2449149 lines, 20872079 words, 373624698 characters
+# Answer: 2449149 lines, 20872079 words, 373624698 characters
 
 # Q3. Number of sequence regions (chromosomes) in the file
 cat Hucho_hucho.ASM331708v1.112.gff3 | grep '##sequence-region' | wc -l
@@ -50,4 +50,4 @@ cat hucho.gff3 | cut -f 3 | sort-uniq-count-rank | head
 # 744     snoRNA
 
 # Q6. Having analyzed this GFF file, does it seem like a complete and well-annotated organism? 
-# Answer: This looks like a well-anotated genome.
+# Answer: This looks like a well-annotated genome.
