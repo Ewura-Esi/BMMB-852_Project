@@ -127,8 +127,8 @@ NC_000962.3 Mycobacterium tuberculosis H37Rv, complete genome
 
 ### I created my gff using by typing the following in vs code I created a custom GFF file with intervals representing hypothetical regions of interest I visualized this file alongside the main annotations in IGV.
 ```
-NC_000962.3	.	.	1000	1800	.	+	.	.
-NC_000962.3	.	.	2000	3000	.	+	.	.
+NC_000962.3	RefSeq	gene	900670	1278684	.	+	.	ID=mygene
 ```
 
-### The screenshot to the visualization of my genome of interest can be found here
+### The screenshots to the IGV visualization of my genome of interest can be found here
+https://github.com/Ewura-Esi/BMMB-852_Project/blob/main/Week3/igv_snapshot.png
