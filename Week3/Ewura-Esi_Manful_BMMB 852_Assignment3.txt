@@ -1,0 +1,58 @@
+# All lines starting with # are not codes that can be executed
+
+# BMMB 852 Assignment 3
+
+# I chose the organism *Mycobacterium tuberculosis*
+
+# I used NCBI Datasets (https://www.ncbi.nlm.nih.gov/datasets/) to get the accession number (GCF_000195955.2) and downloaded the fna and the gff files from the command line
+
+# Before downloading the files, I activated my bioinfo conda environment by typing
+micromamba activate bioinfo
+
+# I went ahead to update the ncbi datasets before starting the download by typing
+micromamba update ncbi-datasets-cli jq
+
+# I checked the summary or metadata of the genome using the accession number GCF_000195955.2  before downloading by typing 
+datasets summary genome accession GCF_000195955.2 | jq
+
+
+# Download the file
+datasets download genome accession GCF_000195955.2 
+
+
+# I noticed I didn't have the unzip command so I installed the unzip command before unzipping the file
+micromamba install unzip
+
+# Unzip the file
+unzip ncbi_dataset.zip
+
+
+# Download the gff3 and the gtf files (including additional information for the genome)
+datasets download genome accession GCF_000195955.2 --include gff3,gtf
+ 
+
+# View the top 10 lines of the gff file (I wanted to know the features present)
+cat genomic.gff | head
+
+
+# View all the annotation for only the genes
+cat genomic.gff | awk ' $3=="gene" { print $0 }'
+
+
+# Extract all intervals for genes and saved them into a different file called gene.gff to view them on IGV
+cat genomic.gff | awk ' $3=="gene" { print $0 }' > gene.gff
+
+# Making my own gff file manually (I named it my_own.gff)
+code my_own.gff
+
+# Obtain the chromosome accession for making my gff file 
+cat GCF_000195955.2_ASM19595v2_genomic.fna | head -1
+ 
+
+# I created my gff using by typing the following in vs code I created a custom GFF file with intervals representing hypothetical  regions of interest I visualized this file alongside the main annotations in IGV.
+```
+NC_000962.3	.	.	1000	1800	.	+	.	.
+NC_000962.3	.	.	2000	3000	.	+	.	.
+```
+
+

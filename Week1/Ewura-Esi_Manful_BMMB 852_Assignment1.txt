@@ -1,0 +1,39 @@
+Lecture 1:
+
+1.	Done.
+
+2. 	Done.
+
+3.	I can tell I was successful by running doctor.py. If it generates a similar output in the book and confirms that all the tools I 	installed are functioning correctly, then I 	know everything was set up properly.  
+
+4.	Yes by using the syntax `samtools <command> [options] <input-file>`
+
+5.	samtools 1.20
+
+6.	https://github.com/Ewura-Esi/BMMB-852_Project
+
+
+Lecture 2
+
+1.	The chmod command. I would use the chmod command when I need to change the permissions of a file or directory. For instance, if I want to give a colleague access 	to edit a file we are collaborating on, or if I need to restrict access to my personal work in a group folder, I can modify the permissions accordingly using chmod.
+
+2. 	A customization for the chmod command is the use of numeric codes to specify the exact permissions. For example, using chmod 755 filename sets the permissions so 	that the owner can read, write, and execute the file (7), while others can only read and execute (5). I can use the flag option -R for recursive permission changes. For 	example, `chmod -R 755 directory_name` will apply the permission change to all files and subdirectories within the specified directory.
+
+3.	-h
+
+4.	-i
+
+5.	Creating a Nested Directory Structure:
+	`mkdir  -p assignment1/section1/setA  assignment1/section1/setB  assignment1/section2/setC  assignment1/section2/setD`
+
+	Creating files in the various directories:
+	Assuming I would like to create files in the setA, setB, setC and setD directories, I will use the following command
+	`touch assignment1/section1/setA/file1.txt assignment1/section1/setB/file2.txt assignment1/section2/setC/file3.txt assignment1/section2/setD/file4.txt`
+
+6.	Absolute path: /home/biouser/assignment1/section1/setA/file1.txt
+	Assuming my current directory is assignment1, then the relative path to file1 will be: section1/setA/file1.txt
+
+7.	Home directory - I can navigate from anywhere in the system to my home directory using the command `cd ~`
+	Current directory - I can use the `.` symbol, which represents the directory I am currently in. For example, I can list all files and directories in the current directory 	using `ls .`
+	Parent directory - I can use the shortcut  `cd ..` to navigate to the parent directory. For example, If I am in /assignment1/section1/setA and want to go up one level (i.e. 	to the parent directory which is section1) to /assignment1/section1, I can type `cd ..`
+
