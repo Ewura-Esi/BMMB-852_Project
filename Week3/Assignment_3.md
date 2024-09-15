@@ -131,4 +131,6 @@ NC_000962.3	RefSeq	gene	900670	1278684	.	+	.	ID=mygene
 ```
 
 ### The screenshots to the IGV visualization of my genome of interest can be found here
-https://github.com/Ewura-Esi/BMMB-852_Project/blob/main/Week3/igv_snapshot.png
+https://github.com/Ewura-Esi/BMMB-852_Project/blob/main/Week3/IGV_Screenshot_1.png
+https://github.com/Ewura-Esi/BMMB-852_Project/blob/main/Week3/IGV_Screenshot_2.png
+https://github.com/Ewura-Esi/BMMB-852_Project/blob/main/Week3/IGV_Screenhot_3.png
