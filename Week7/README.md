@@ -45,3 +45,39 @@ The Makefile includes the following key tasks:
 
 ### Instructions
 To download a genome, simulate reads, or process SRA data, modify the Makefile variables as necessary (e.g., accession numbers for genome and SRA data). Execute tasks using a single command or combination of commands. You can clean up files or just remove certain generated reports depending on the workflow stage.
+
+### How to run the workflow
+1. Download the genome
+```bash
+make genome
+```
+2. Simulate reads
+```bash
+make simulate
+```
+3. Download SRA reads
+```bash
+make download
+```
+4. Trim reads using default parameters
+```bash
+make trim
+```
+5. Generate fastqc reports
+```bash
+make report1
+```
+6. Retrim reads by cutting the tail
+```bash
+make retrim
+```
+7. Generate fastqc report for retrimmed reads
+```bash
+make reports2
+```
+8. Clean up all files
+```bash
+make clean
+```
+
+
