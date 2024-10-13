@@ -31,7 +31,8 @@ The Makefile includes the following key tasks:
 **Genome Download**: Downloads the genome file from Ensembl and prepares it for simulation or further analysis.
 
 **Read Simulation**: Simulates paired-end sequencing reads using wgsim.
-SRA Download: Downloads sequencing reads from SRA and runs an initial quality control report.
+
+**SRA Download**: Downloads sequencing reads from SRA and runs an initial quality control report.
 
 **Read Trimming**: Trims reads using fastp using default parameters
 
