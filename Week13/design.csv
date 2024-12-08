@@ -1,0 +1,7 @@
+run_accession,sample,condition
+SRR31230569,WT-1,untreated
+SRR31230568,WT-2,untreated
+SRR31230565,WT-3,untreated
+SRR31230561,IUP3+isoprenol-1,treated
+SRR31230560,IUP3+isoprenol-2,treated
+SRR31230559,IUP3+isoprenol-3,treated
